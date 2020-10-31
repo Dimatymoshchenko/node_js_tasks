@@ -1,11 +1,11 @@
-#Node.js Homework
+# Node.js Homework
 
-###To run app:
+### To run app:
 ```
 $ PORT=8080 node app.js -env='prod'
 ```
 
-###To check app:
+### To check app:
 ```
 $ curl localhost:8080
 ```
