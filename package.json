@@ -18,6 +18,7 @@
   "homepage": "https://github.com/DirKraftz/node_js_tasks#readme",
   "dependencies": {
     "body-parser": "^1.19.0",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "winston": "^3.3.3"
   }
 }
