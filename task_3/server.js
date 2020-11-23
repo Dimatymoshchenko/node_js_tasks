@@ -27,7 +27,7 @@ app.get('/events', async (req, res) => {
 
     res.json(events);
   } catch (e) {
-    res.sendStatus(400);
+    res.sendStatus(500);
   }
 });
 
@@ -39,7 +39,7 @@ app.get('/events/:id', async (req, res) => {
 
     res.json(event)
   } catch (e) {
-    res.sendStatus(400)
+    res.sendStatus(500)
   }
 });
 
@@ -51,7 +51,7 @@ app.delete('/events/:id', async (req, res) => {
 
     res.json(updatedEvents)
   } catch (e) {
-    res.sendStatus(400);
+    res.sendStatus(500);
   }
 });
 
@@ -69,7 +69,7 @@ app.post('/events', async (req, res) => {
 
     res.json(updatedEvents)
   } catch (e) {
-    res.sendStatus(400);
+    res.sendStatus(500);
   }
 });
 
@@ -83,7 +83,7 @@ app.put('/events/:id', async (req, res) => {
 
     res.json(updatedEvents)
   } catch (e) {
-    res.sendStatus(400);
+    res.sendStatus(500);
   }
 });
 
@@ -93,7 +93,7 @@ app.get('/events-batch', async (req, res) => {
     const stream = await createStream(events);
     stream.pipe(res.type('json'));
   } catch (e) {
-    res.sendStatus(400);
+    res.sendStatus(500);
   }
 })
 
